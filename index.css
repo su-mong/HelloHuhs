@@ -1,0 +1,49 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #1D1D1D;
+}
+
+p {
+    font-family: 'Roboto';
+    src: url('webfont.eot'); /* IE9+ Compat Modes */
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super modern browsers */
+       url('webfont.woff') format('woff'), /* Modern browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#FontName') format('svg'); /* Legacy iOS */
+    color: white;
+}
+
+.white_alpha {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+    display: none;
+}
+.alert {
+    position: absolute;
+    width: 90vw;
+    height: 47.3vw;
+    top: 50%;
+    margin-top: -23.65vw;
+    left: 50%;
+    margin-left: -45vw;
+}
+
+
+.typing {
+    display: inline-block;
+    animation-name: typeani;
+    animation-duration: 0.02s;
+    animation-iteration-count: infinite;
+}
+@keyframes typeani {
+    0%{border-right: 1px solid #333;}
+    50%{border-right: 1px solid white;}
+    100%{border-right: 1px solid #333;}
+}

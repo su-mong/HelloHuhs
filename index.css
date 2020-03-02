@@ -3,10 +3,13 @@ body {
     width: 100%;
     height: 100%;
     background-color: #1D1D1D;
+    padding: 5px;
+    overflow: hidden; /*스크롤 아예 방지*/
 }
 
 p {
     font-family: 'Roboto';
+    font-size: small;
     src: url('webfont.eot'); /* IE9+ Compat Modes */
     src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('webfont.woff2') format('woff2'), /* Super modern browsers */
@@ -46,4 +49,48 @@ p {
     0%{border-right: 1px solid #333;}
     50%{border-right: 1px solid white;}
     100%{border-right: 1px solid #333;}
+}
+
+.progressbar{
+	border-radius:5px;
+    position:relative;
+    top: 50%;
+    margin-top: 10.6vw;
+    left: 10.5vw;
+	width: 78vw;
+	height: 5.2vw;
+	background-color: rgb(212, 212, 212);
+	overflow:hidden;
+    -webkit-box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
+    -moz-box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
+    box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
+}
+.progress{
+	border-radius:5px;
+	position:absolute;
+	left: -79vw;
+	width: 79vw;
+	height: 5.2vw;
+	background:rgb(93,93,93) repeat-x 0px 0px;
+    -webkit-box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
+    -moz-box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
+    box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
+}
+
+.page_second {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.invite {
+    position: absolute;
+    width: 90vw;
+    height: 47.3vw;
+    top: 50%;
+    text-align: center;
+    display: none;
 }

@@ -9,8 +9,8 @@
 //ㅅ == <font size="20pt">&nbsp;</font>
 
 var code = `
-@#include <hanyang.h>;%
-#include <huhs_since_1982.h>;%
+@#include <hanyang.h>%
+#include <huhs_since_1982.h>%
 %
 string $title = ^“hanging university hard & software”;%
 @public void $print_title() {%
@@ -28,14 +28,13 @@ string $title = ^“hanging university hard & software”;%
 ^|study(various_studys); //다양한 프로그래밍 스터디%
 |friend(party_people); ~~~//매 계절별 MT와 소풍 등%
 $|if(huhs) {%
-%
+^||you = club |~//실력%
+||can++; ||~~~//제한%
+||get.come |~~//없음%
+||whatever |~~//관심%
+||you = join |~//있는%
+||want++; ||//당신%
 |}%
-^|you = club |~//실력%
-|can++; ||~~~//제한%
-|get.come |~~//없음%
-|whatever |~~//관심%
-|you = join |~//있는%
-|want++; ||//당신%
 }%
 %
 @public void $contact(string case) {%

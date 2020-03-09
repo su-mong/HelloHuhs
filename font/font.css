@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Wingdings-Regular';
+  src: url('Wingdings-Regular.svg#Wingdings-Regular') format('svg'),
+       url('Wingdings-Regular.ttf') format('truetype'),
+       url('Wingdings-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Wingdings';
+  src: url('Wingdings.eot');
+  src: url('Wingdings.eot?#iefix') format('embedded-opentype'),
+       url('Wingdings.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

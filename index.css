@@ -19,19 +19,6 @@ body {
         url("//db.onlinewebfonts.com/t/e50f08c648d677fc2b0f52ac98afb797.svg#Ayuthaya") format("svg"); 
     }
 
-.code {
-    font-family: 'Roboto';
-    font-size: small;
-    padding: 5px;
-    src: url('webfont.eot'); /* IE9+ Compat Modes */
-    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('webfont.woff2') format('woff2'), /* Super modern browsers */
-       url('webfont.woff') format('woff'), /* Modern browsers */
-       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('webfont.svg#FontName') format('svg'); /* Legacy iOS */
-    color: white;
-}
-
 .white_alpha {
     position: absolute;
     top: 0px;
@@ -74,6 +61,19 @@ body {
 
 /* 모바일 */
 @media all and (max-width: 768px) {
+    .code {
+        font-family: 'Roboto';
+        font-size: 12px;
+        padding: 5px;
+        src: url('webfont.eot'); /* IE9+ Compat Modes */
+        src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('webfont.woff2') format('woff2'), /* Super modern browsers */
+           url('webfont.woff') format('woff'), /* Modern browsers */
+           url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+           url('webfont.svg#FontName') format('svg'); /* Legacy iOS */
+        color: white;
+    }
+    
     .alert {
         position: absolute;
         width: 90vw;
@@ -158,6 +158,19 @@ body {
 
 /* PC버전 */
 @media not all and (max-width: 768px) {
+    .code {
+        font-family: 'Roboto';
+        font-size: small;
+        padding: 5px;
+        src: url('webfont.eot'); /* IE9+ Compat Modes */
+        src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('webfont.woff2') format('woff2'), /* Super modern browsers */
+           url('webfont.woff') format('woff'), /* Modern browsers */
+           url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+           url('webfont.svg#FontName') format('svg'); /* Legacy iOS */
+        color: white;
+    }
+    
     .alert {
         position: absolute;
         width: 90vh;

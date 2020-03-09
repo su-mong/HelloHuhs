@@ -3,13 +3,26 @@ body {
     width: 100%;
     height: 100%;
     background-color: #1D1D1D;
-    padding: 5px;
+    /*padding: 5px;*/
     overflow: hidden; /*스크롤 아예 방지*/
 }
 
-p {
+@import url(https://db.onlinewebfonts.com/c/e50f08c648d677fc2b0f52ac98afb797?family=Ayuthaya);
+
+@font-face {
+    font-family: "Ayuthaya";
+    src: url("//db.onlinewebfonts.com/t/e50f08c648d677fc2b0f52ac98afb797.eot");
+    src: url("//db.onlinewebfonts.com/t/e50f08c648d677fc2b0f52ac98afb797.eot?#iefix") format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/e50f08c648d677fc2b0f52ac98afb797.woff2") format("woff2"), 
+        url("//db.onlinewebfonts.com/t/e50f08c648d677fc2b0f52ac98afb797.woff") format("woff"), 
+        url("//db.onlinewebfonts.com/t/e50f08c648d677fc2b0f52ac98afb797.ttf") format("truetype"), 
+        url("//db.onlinewebfonts.com/t/e50f08c648d677fc2b0f52ac98afb797.svg#Ayuthaya") format("svg"); 
+    }
+
+.code {
     font-family: 'Roboto';
     font-size: small;
+    padding: 5px;
     src: url('webfont.eot'); /* IE9+ Compat Modes */
     src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('webfont.woff2') format('woff2'), /* Super modern browsers */
@@ -28,15 +41,6 @@ p {
     background-color: rgba(255,255,255,0.5);
     display: none;
 }
-.alert {
-    position: absolute;
-    width: 90vw;
-    height: 47.3vw;
-    top: 50%;
-    margin-top: -23.65vw;
-    left: 50%;
-    margin-left: -45vw;
-}
 
 
 .typing {
@@ -51,46 +55,235 @@ p {
     100%{border-right: 1px solid #333;}
 }
 
-.progressbar{
-	border-radius:5px;
-    position:relative;
-    top: 50%;
-    margin-top: 10.6vw;
-    left: 10.5vw;
-	width: 78vw;
-	height: 5.2vw;
-	background-color: rgb(212, 212, 212);
-	overflow:hidden;
-    -webkit-box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
-    -moz-box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
-    box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
-}
-.progress{
-	border-radius:5px;
-	position:absolute;
-	left: -79vw;
-	width: 79vw;
-	height: 5.2vw;
-	background:rgb(93,93,93) repeat-x 0px 0px;
-    -webkit-box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
-    -moz-box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
-    box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
-}
-
-.page_second {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
+.info_page {
     display: none;
+    opacity: 0;
+    position: relative;
+    width: 56.24vh;
+    height: 100vh;
+    left: 50%;
+    margin-left: -28.12vh;
+    top: 0vh;
 }
 
-.invite {
+.background_info {
     position: absolute;
-    width: 90vw;
-    height: 47.3vw;
-    top: 50%;
+    width: 56.24vh;
+    height: 100vh;
+}
+
+/* 모바일 */
+@media all and (max-width: 768px) {
+    .alert {
+        position: absolute;
+        width: 90vw;
+        height: 47.3vw;
+        top: 50%;
+        margin-top: -23.65vw;
+        left: 50%;
+        margin-left: -45vw;
+    }
+
+    .progressbar{
+        border-radius:5px;
+        position:relative;
+        top: 50%;
+        margin-top: 10.6vw;
+        left: 10.5vw;
+        width: 78vw;
+        height: 5.2vw;
+        background-color: rgb(212, 212, 212);
+        overflow:hidden;
+        -webkit-box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
+        -moz-box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
+        box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
+    }
+    .progress{
+        border-radius:5px;
+        position:absolute;
+        left: -79vw;
+        width: 79vw;
+        height: 5.2vw;
+        background:rgb(93,93,93) repeat-x 0px 0px;
+        -webkit-box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
+        -moz-box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
+        box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
+    }
+
+    .info_title {
+        opacity: 0;
+        position: absolute;
+        color: white;
+        font-family: "Ayuthaya";
+
+        width: 30vh;
+        top: 17.5vh;
+        left: 5vh;
+        /*top: 15vh;
+        left: 4.5vh;*/
+    }
+
+    .info_description {
+        opacity: 0;
+        position: absolute;
+        color: black;
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: large;
+
+        width: 47.24vh;
+        top: 83vh;
+        left: 4.5vh;
+    }
+
+    .img_up {
+        opacity: 0;
+        position: absolute;
+        width: 35.4vh;
+        height: 22.68vh;
+        top: 32.8vh;
+        left: 50%;
+        margin-left: 10.8vh; /*-17.7vh*/
+    }
+    
+    .img_down {
+        opacity: 0;
+        position: absolute;
+        width: 35.4vh;
+        height: 22.68vh;
+        top: 57.2vh;
+        left: 50%;
+        margin-left: 10.8vh; /*-17.7vh*/
+    }
+}
+
+/* PC버전 */
+@media not all and (max-width: 768px) {
+    .alert {
+        position: absolute;
+        width: 90vh;
+        height: 47.3vh;
+        top: 50%;
+        margin-top: -23.65vh;
+        left: 50%;
+        margin-left: -45vh;
+    }
+
+    .progressbar{
+        border-radius:5px;
+        position:relative;
+        top: 50%;
+        margin-top: 10.6vh;
+        left: 50%;
+        margin-left: -39vh;
+        width: 78vh;
+        height: 5.2vh;
+        background-color: rgb(212, 212, 212);
+        overflow:hidden;
+        -webkit-box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
+        -moz-box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
+        box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
+    }
+    .progress{
+        border-radius:5px;
+        position:absolute;
+        left: -79vh;
+        width: 79vh;
+        height: 5.2vh;
+        background:rgb(93,93,93) repeat-x 0px 0px;
+        -webkit-box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
+        -moz-box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
+        box-shadow: inset 5px 5px 8px rgba(255,255,255,1);
+    }
+
+    .info_title {
+        opacity: 0;
+        position: absolute;
+        color: white;
+        font-family: "Ayuthaya";
+
+        width: 30vh;
+        top: 18.5vh;
+        left: 5vh;
+        /*top: 15vh;
+        left: 4.5vh;*/
+    }
+
+    .info_description {
+        opacity: 0;
+        position: absolute;
+        color: black;
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: large;
+
+        width: 47.24vh;
+        top: 83vh;
+        left: 4.5vh;
+    }
+
+    .img_up {
+        opacity: 0;
+        position: absolute;
+        width: 35.4vh;
+        height: 22.68vh;
+        top: 32.8vh;
+        left: 50%;
+        margin-left: 10.8vh; /*-17.7vh*/
+    }
+    
+    .img_down {
+        opacity: 0;
+        position: absolute;
+        width: 35.4vh;
+        height: 22.68vh;
+        top: 57.2vh;
+        left: 50%;
+        margin-left: 10.8vh; /*-17.7vh*/
+    }
+}
+
+.join_page {
+    display: none;
+    opacity: 0;
+    position: relative;
+    width: 56.24vh;
+    height: 100vh;
+    left: 50%;
+    margin-left: -28.12vh;
+    top: 0vh;
+}
+
+.huhs_logo {
+    position: absolute;
+    width: 56.24vh;
+    height: 56.24vh;
+
+    top: 10vh;
+    left: 0vh;
+    /*left: 50%;
+    margin-left: -28.12vh;*/
+}
+
+.join_p {
+    position: absolute;
+    color: white;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: xx-large;
     text-align: center;
-    display: none;
+
+    top: 62vh;
+    width: 38vh;
+    /*left: 50%;*/
+    left: 9.12vh;
+}
+
+.join_madeby {
+    position: absolute;
+    color: white;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: large;
+    text-align: center;
+
+    top: 80vh;
+    width: 50vh;
+    left: 3.12vh;
 }
